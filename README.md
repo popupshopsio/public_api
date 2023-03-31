@@ -21,7 +21,7 @@ In the body of your request, the JSON opject should follow this format:
 |--------------|------|--------|----------------------------------|-------|
 |user_email    |string|Yes     |The email address of the user     |       |
 |api_key       |string|Yes     |The API key assigned to user_email|       |
-|data          |object|Yes     |See `Data` table                    |       |
+|data          |object|Yes     |See `data` table                    |       |
 
 
 ### data
@@ -68,3 +68,225 @@ In the body of your request, the JSON opject should follow this format:
 |video_url     |string |No      |The URL of the video. Include "https://…"                                                   |                                                     |
 |embed_360     |string |No      |The embed code for a 360-degree view of the available space                                 |                                                     |
 |apply_link    |string |No      |The URL for applying for the available space                                                |                                                     |
+
+## Examples
+### add a property
+```json
+{
+    "user_email": "john@johndoe.com",
+	"api_key": "***********",
+    "data": [
+        {
+            "action": "add",
+            "status": "public",
+            "name_for_listing": "New Property Name",
+            "address": "742 E Evergreen St, Springfield, MO 65803, USA",
+            "type_of_property": "Mall|Shopping Center – Open Air",
+            "available_spaces": [
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                }
+            ],
+            "logo": "https://i.imgur.com/3jWdoKW.jpeg",
+            "top_image": "https://i.imgur.com/am2LQon.jpeg",
+            "short_description": "Brief intro, your elevator pitch. 280 characters max.",
+            "long_description": "&lt;h1&gt;This is a great property&lt;/h1&gt;&lt;p&gt;It is where you want to pop up! &lt;span style=&quot;text-transform:uppercase;&quot;&gt;Don&apos;t miss this opportunity&lt;/span&gt;&lt;br&gt;Message us today!&lt;/p&gt;",
+            "info_packet": "https://www.nasa.gov/sites/default/files/atoms/files/nasa_graphics_manual_nhb_1430-2_jan_1976",
+            "diagram": "https://www.nasa.gov/sites/default/files/atoms/files/nasa_graphics_manual_nhb_1430-2_jan_1976.pdf",
+            "site_plan": "https://www.spacex.com/media/falcon-users-guide-2021-09.pdf",
+            "photos": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+            "website": "https://google.com",
+            "website_button_text": "View Website",
+            "video_source": "vimeo",
+            "video_orientation": "horizontal",
+            "video_url": "https://vimeo.com/432723379",
+            "available_lease_lengths": "Weekend|Week",
+            "median_age": 32,
+            "population": 1.2,
+            "average_hh_income": 120000,
+            "key_tenants_tenant": "Apple|Starbucks|Chick-Fil-A",
+            "editing_users": "jane@johndoe.com",
+            "messaging_users": "jane@johndoe.com|jack@johndoe.com",
+            "popable_mantch_users": "jack@johndoe"
+        }
+    ]
+}
+```
+
+### update a property
+```json
+{
+    "user_email": "john@johndoe.com",
+    "api_key": "***********",
+    "data": [
+        {
+            "action": "update",
+            "property_id": 132674,
+            "status": "public",
+            "name_for_listing": "Existing Property Name",
+            "address": "742 E Evergreen St, Springfield, MO 65803, USA",
+            "type_of_property": "Mall|Shopping Center – Open Air",
+            "available_spaces": [
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "GB2",
+                    "space_type": "inline",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "2400",
+                    "apply_link": "https://google.com"
+                },
+                {
+                    "suite": "FM2",
+                    "space_type": "kiosk",
+                    "gallery": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+                    "video_url": "https://vimeo.com/432723379",
+                    "embed_360": "&lt;iframe src=&#039;https://www.google.com/maps/embed?pb=!4v1679349548762!6m8!1m7!1sCAoSLEFGMVFpcFBieDdaV3FHRWFIODBsTHMwSEFVNUQ4ZjJJOHBCalotV0ZyS1I2!2m2!1d29.7260481!2d-95.39058279999999!3f118.17964895712494!4f0!5f0.7820865974627469&#039; width=&#039;600&#039; height=&#039;450&#039; style=&#039;border:0&#039; allowfullscreen=&#039;&#039;&gt;&lt;/iframe&gt;",
+                    "gla": "400",
+                    "apply_link": "https://google.com"
+                }
+            ],
+            "logo": "https://i.imgur.com/3jWdoKW.jpeg",
+            "top_image": "https://i.imgur.com/am2LQon.jpeg",
+            "short_description": "Brief intro, your elevator pitch. 280 characters max.",
+            "long_description": "&lt;h1&gt;This is a great property&lt;/h1&gt;&lt;p&gt;It is where you want to pop up! &lt;span style=&quot;text-transform:uppercase;&quot;&gt;Don&apos;t miss this opportunity&lt;/span&gt;&lt;br&gt;Message us today!&lt;/p&gt;",
+            "info_packet": "https://www.nasa.gov/sites/default/files/atoms/files/nasa_graphics_manual_nhb_1430-2_jan_1976.pdf",
+            "diagram": "https://www.nasa.gov/sites/default/files/atoms/files/nasa_graphics_manual_nhb_1430-2_jan_1976.pdf",
+            "site_plan": "https://www.spacex.com/media/falcon-users-guide-2021-09.pdf",
+            "photos": "https://i.imgur.com/ZBvtxcw.jpeg|https://i.imgur.com/3H4jIhf.jpeg|https://i.imgur.com/sS3sGIv.jpeg",
+            "website": "https://google.com",
+            "website_button_text": "View Website",
+            "video_source": "vimeo",
+            "video_orientation": "horizontal",
+            "video_url": "https://vimeo.com/432723379",
+            "available_lease_lengths": "Weekend|Week",
+            "median_age": 32,
+            "population": 1.2,
+            "average_hh_income": 120000,
+            "key_tenants_tenant": "Apple|Starbucks|Chick-Fil-A",
+            "editing_users": "jane@johndoe.com",
+            "messaging_users": "jane@johndoe.com|jack@johndoe.com",
+            "popable_mantch_users": "jack@johndoe"
+        }
+    ]
+}
+```
+
+### update a property
+```json
+{
+    "user_email": "john@johndoe.com",
+    "api_key": "***********",
+    "data": [
+        {
+            "action": "delete",
+            "property_id": "1234567"
+        }
+    ]
+}
+```
