@@ -1,6 +1,21 @@
 # Popable Public API Documentation
 Contained here are the info and details necessary to functionally use the Popable API. If you have questions, please reach out to support @ Popable . com
 
+### Table of Contents
+* [Endpoint Info](https://github.com/popupshopsio/public_api#endpoint)
+* [Authentication](https://github.com/popupshopsio/public_api#authentication)
+* [JSON object](https://github.com/popupshopsio/public_api#json-object-to-send)
+⋅⋅* [Object](https://github.com/popupshopsio/public_api#json-object)
+⋅⋅* [Data Table](https://github.com/popupshopsio/public_api#data)
+⋅⋅* [Available Spaces Table](https://github.com/popupshopsio/public_api#available_spaces)
+* [Examples](https://github.com/popupshopsio/public_api#examples)
+⋅⋅* [Add a Property](https://github.com/popupshopsio/public_api#add-a-property)
+⋅⋅* [Update a Property](https://github.com/popupshopsio/public_api#update-a-property)
+⋅⋅* [Delete a Property](https://github.com/popupshopsio/public_api#delete-a-property)
+⋅⋅* [Delete multiple Properties](https://github.com/popupshopsio/public_api#delete-several-properties)
+* [Returns](https://github.com/popupshopsio/public_api#return)
+⋅⋅* [Return Codes](https://github.com/popupshopsio/public_api#return-codes)
+
 
 # ENDPOINT
 https://popable.com/wp-json/pop/v1/manage_space
@@ -22,7 +37,7 @@ In the body of your request, the JSON opject should follow this format:
 |--------------|------|--------|----------------------------------|-------|
 |user_email    |string|Yes     |The email address of the user     |       |
 |api_key       |string|Yes     |The API key assigned to user_email|       |
-|data          |object|Yes     |See `data` table                    |       |
+|data          |object|Yes     |[See the `data` table](https://github.com/popupshopsio/public_api#data).                    |       |
 
 
 ### data
@@ -36,7 +51,7 @@ In the body of your request, the JSON opject should follow this format:
 |name_for_listing       |string |Yes                                      |The name of the property as it will appear in listings                                                                      |                                                                                                                                                                               |
 |address                |string |Yes                                      |The street address of the property                                                                                          |                                                                                                                                                                               |
 |type_of_property       |string |Yes                                      |The type(s) of property. Separated with a vertical pipe &#124;                                                                   |Shopping Center – Power&#124;Shopping Center – Strip&#124;Shopping Center – Open Air&#124;Shopping Center – Lifestyle&#124;Mall&#124;Event Space&#124;Pop-up Collective&#124;Retail Space&#124;Restaurant&#124;Outdoor Space|
-|available_spaces       |array  |Yes                                      |An array of available spaces in the property                                                                                |See the [`available_spaces` Table](https://github.com/popupshopsio/public_api#available_spaces).                                                                                                                                              |
+|available_spaces       |array  |Yes                                      |An array of available spaces in the property                                                                                |[See the `available_spaces` Table](https://github.com/popupshopsio/public_api#available_spaces).                                                                                                                                              |
 |logo                   |string |Yes                                      |The URL of the image file for the logo of the property. Images should be square.                                            |                                                                                                                                                                               |
 |top_image              |string |Yes                                      |The URL of the image file for the top image for the property. Best is 1500px X 500px                                        |                                                                                                                                                                               |
 |long_description       |string |Yes                                      |A long description of the property. Can include html, but the HTML entities need to be encoded/escaped. Example: Replace `<` with `&lt;`. In PHP `htmlspecialchars_encode()` is apropreiate.()                     |                                                                                                                                                                               |
