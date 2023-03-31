@@ -52,3 +52,14 @@ In the body of your request, the JSON opject should follow this format:
 |editing_users          |string |No                                       |The email address of existing users who are allowed to edit the property. Separated with a vertical pipe &#124;                  |                                                                                                                                                                               |
 |messaging_users        |string |No                                       |The email address of existing users who will receive emails of messages to the property. Separated with a vertical pipe &#124;   |                                                                                                                                                                               |
 |popable_mantch_users   |string |No                                       |The email address of existing users who will receive Popable Match emails for the property. Separated with a vertical pipe &#124;|                                                                                                                                                                               |
+
+##### available spaces
+|Parameter Name|Type   |Required|Description                                                                                 |Options                                              |
+|--------------|-------|--------|--------------------------------------------------------------------------------------------|-----------------------------------------------------|
+|suite         |string |Yes     |The name of the available space or suite                                                    |                                                     |
+|space_type    |string |Yes     |The type of space available                                                                 |common, inline, kiosk, restaurant, outdoors, or other|
+|gla           |integer|Yes     |The Gross Leasable Area (GLA) of the available space                                        |                                                     |
+|gallery       |string |No      |The URL(s) of the image(s) file for a gallery of the space. Separated with a vertical pipe &#124;|                                                     |
+|video_url     |string |No      |The URL of the video. Include "https://…"                                                   |                                                     |
+|embed_360     |string |No      |The embed code for a 360-degree view of the available space                                 |                                                     |
+|apply_link    |string |No      |The URL for applying for the available space                                                |                                                     |
