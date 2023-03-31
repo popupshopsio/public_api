@@ -21,7 +21,10 @@ In the body of your request, the JSON opject should follow this format:
 |api_key       |string|Yes     |The API key assigned to user_email|       |
 |data          |object|Yes     |See Data table                    |       |
 
-##### data
+***
+***
+## data
+***
 |Parameter Name         |Type   |Required                                 |Description                                                                                                                 |Options                                                                                                                                                                        |
 |-----------------------|-------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |action                 |string |Yes                                      |The action to be performed                                                                                                  |add / update / delete                                                                                                                                                          |
@@ -52,8 +55,10 @@ In the body of your request, the JSON opject should follow this format:
 |editing_users          |string |No                                       |The email address of existing users who are allowed to edit the property. Separated with a vertical pipe &#124;                  |                                                                                                                                                                               |
 |messaging_users        |string |No                                       |The email address of existing users who will receive emails of messages to the property. Separated with a vertical pipe &#124;   |                                                                                                                                                                               |
 |popable_mantch_users   |string |No                                       |The email address of existing users who will receive Popable Match emails for the property. Separated with a vertical pipe &#124;|                                                                                                                                                                               |
-
-##### available spaces
+***
+***
+## available_spaces
+***
 |Parameter Name|Type   |Required|Description                                                                                 |Options                                              |
 |--------------|-------|--------|--------------------------------------------------------------------------------------------|-----------------------------------------------------|
 |suite         |string |Yes     |The name of the available space or suite                                                    |                                                     |
