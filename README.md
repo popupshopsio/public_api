@@ -319,14 +319,14 @@ In the body of your request, the JSON opject should follow this format:
 This is what can be expected on the return.
 Please be sure to save the `property_id` so that future `update` or `delete` calls can be made against that property.
 
-### Successful `add` call
+### Successful `add` call return
 ```json
 [
     {
         "ret_code": 701,
         "property_id": 2345678,
         "response": "added with errors",
-        "property_url": "https://popable.com/space/new-property-name-14/",
+        "property_url": "https://popable.com/space/new-property-name/",
         "errors": [
             {
                 "property_id": 2345678,
@@ -337,7 +337,7 @@ Please be sure to save the `property_id` so that future `update` or `delete` cal
 ]
 ```
 
-### Successful `update` call
+### Successful `update` call return
 ```json
 [
     {
@@ -351,7 +351,7 @@ Please be sure to save the `property_id` so that future `update` or `delete` cal
 
 
 
-### Successful `delete` call
+### Successful `delete` call return
 ```json
 [
     {
@@ -361,3 +361,15 @@ Please be sure to save the `property_id` so that future `update` or `delete` cal
     }
 ]
 ```
+### Return Codes
+|Action        |Result             |ret_code|
+|--------------|-------------------|--------|
+|Authenticaiton|Failed             |401     |
+|add           |Success            |700     |
+|add           |Success with errors|701     |
+|add           |Failed             |400     |
+|update        |Success            |710     |
+|update        |Success with errors|711     |
+|update        |Failed             |400     |
+|delete        |Success            |720     |
+|delete        |Failed             |400     |
