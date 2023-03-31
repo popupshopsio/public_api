@@ -10,7 +10,6 @@ HTTP Method: Post
 
 # AUTHENTICATION
 Popable will enable API access on a per-user basis. 
-
 When actiavted, we will provide an API key that is required for all calls.
 
 
@@ -22,7 +21,7 @@ In the body of your request, the JSON opject should follow this format:
 |--------------|------|--------|----------------------------------|-------|
 |user_email    |string|Yes     |The email address of the user     |       |
 |api_key       |string|Yes     |The API key assigned to user_email|       |
-|data          |object|Yes     |See Data table                    |       |
+|data          |object|Yes     |See `Data` table                    |       |
 
 
 ### data
@@ -35,7 +34,7 @@ In the body of your request, the JSON opject should follow this format:
 |name_for_listing       |string |Yes                                      |The name of the property as it will appear in listings                                                                      |                                                                                                                                                                               |
 |address                |string |Yes                                      |The street address of the property                                                                                          |                                                                                                                                                                               |
 |type_of_property       |string |Yes                                      |The type(s) of property. Separated with a vertical pipe &#124;                                                                   |Shopping Center – Power&#124;Shopping Center – Strip&#124;Shopping Center – Open Air&#124;Shopping Center – Lifestyle&#124;Mall&#124;Event Space&#124;Pop-up Collective&#124;Retail Space&#124;Restaurant&#124;Outdoor Space|
-|available_spaces       |array  |Yes                                      |An array of available spaces in the property                                                                                |See the available_spaces Table                                                                                                                                                 |
+|available_spaces       |array  |Yes                                      |An array of available spaces in the property                                                                                |See the `available_spaces` Table                                                                                                                                                 |
 |logo                   |string |Yes                                      |The URL of the image file for the logo of the property. Images should be square.                                            |                                                                                                                                                                               |
 |top_image              |string |Yes                                      |The URL of the image file for the top image for the property. Best is 1500px X 500px                                        |                                                                                                                                                                               |
 |long_description       |string |Yes                                      |A long description of the property. Can include html formatting if passed via htmlspecialchars_encode()                     |                                                                                                                                                                               |
