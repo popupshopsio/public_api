@@ -16,7 +16,6 @@ When actiavted, we will provide an API key that is required for all calls.
 # JSON OBJECT TO SEND
 In the body of your request, the JSON opject should follow this format:
 
-**note:** while several properties can be managed on a single call, we recommend a single property per call.
 
 ## JSON OBJECT
 |Parameter Name|Type  |Required|Description                       |Options|
@@ -27,6 +26,7 @@ In the body of your request, the JSON opject should follow this format:
 
 
 ### data
+**note:** while several properties can be managed on a single call, we recommend a single property per call.
 
 |Parameter Name         |Type   |Required                                 |Description                                                                                                                 |Options                                                                                                                                                                        |
 |-----------------------|-------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
