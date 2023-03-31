@@ -1,20 +1,20 @@
 # Popable Public API Documentation
-Contained here are the info and details necessary to functionally use the Popable API. If you have questions, please reach out to support @ Popable . com
+Contained here are the info and details necessary to functionally use the Popable REST API. If you have questions, please reach out to support @ Popable . com
 
 ### Table of Contents
 * [Endpoint Info](https://github.com/popupshopsio/public_api#endpoint)
 * [Authentication](https://github.com/popupshopsio/public_api#authentication)
 * [JSON object](https://github.com/popupshopsio/public_api#json-object-to-send)
-⋅⋅* [Object](https://github.com/popupshopsio/public_api#json-object)
-⋅⋅* [Data Table](https://github.com/popupshopsio/public_api#data)
-⋅⋅* [Available Spaces Table](https://github.com/popupshopsio/public_api#available_spaces)
+  * [Object](https://github.com/popupshopsio/public_api#json-object)
+  * [Data Table](https://github.com/popupshopsio/public_api#data)
+  * [Available Spaces Table](https://github.com/popupshopsio/public_api#available_spaces)
 * [Examples](https://github.com/popupshopsio/public_api#examples)
-⋅⋅* [Add a Property](https://github.com/popupshopsio/public_api#add-a-property)
-⋅⋅* [Update a Property](https://github.com/popupshopsio/public_api#update-a-property)
-⋅⋅* [Delete a Property](https://github.com/popupshopsio/public_api#delete-a-property)
-⋅⋅* [Delete multiple Properties](https://github.com/popupshopsio/public_api#delete-several-properties)
+  * [Add a Property](https://github.com/popupshopsio/public_api#add-a-property)
+  * [Update a Property](https://github.com/popupshopsio/public_api#update-a-property)
+  * [Delete a Property](https://github.com/popupshopsio/public_api#delete-a-property)
+  * [Delete multiple Properties](https://github.com/popupshopsio/public_api#delete-several-properties)
 * [Returns](https://github.com/popupshopsio/public_api#return)
-⋅⋅* [Return Codes](https://github.com/popupshopsio/public_api#return-codes)
+  * [Return Codes](https://github.com/popupshopsio/public_api#return-codes)
 
 
 # ENDPOINT
