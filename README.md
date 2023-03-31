@@ -314,3 +314,50 @@ In the body of your request, the JSON opject should follow this format:
     ]
 }
 ```
+
+## Return
+This is what can be expected on the return.
+Please be sure to save the `property_id` so that future `update` or `delete` calls can be made against that property.
+
+### Successful `add` call
+```json
+[
+    {
+        "ret_code": 701,
+        "property_id": 2345678,
+        "response": "added with errors",
+        "property_url": "https://popable.com/space/new-property-name-14/",
+        "errors": [
+            {
+                "property_id": 2345678,
+                "error": "error saving 'info_packet'"
+            }
+        ]
+    }
+]
+```
+
+### Successful `update` call
+```json
+[
+    {
+        "ret_code": 710,
+        "property_id": "3456789",
+        "response": "update Success",
+        "property_url": "https://popable.com/space/existing-property-name/"
+    }
+]
+```
+
+
+
+### Successful `delete` call
+```json
+[
+    {
+        "ret_code": 400,
+        "property_id": "1234567",
+        "error_msg": "'property_id' provided does not exist: 1234567"
+    }
+]
+```
