@@ -10,7 +10,7 @@ HTTP Method: Post
 
 # AUTHENTICATION
 Popable will enable API access on a per-user basis. 
-When actiavted, we will provide an API key that is required for all calls.
+When activated, we will provide an API key that is required for all calls.
 
 
 # JSON OBJECT TO SEND
