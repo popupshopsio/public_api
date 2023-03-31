@@ -15,6 +15,7 @@ When actiavted, we will provide an API key that is required for all calls.
 
 # JSON OBJECT TO SEND
 In the body of your request, the JSON opject should follow this format:
+**note:** while several properties can be managed on a single call, we recommend a single property per call.
 
 ## JSON OBJECT
 |Parameter Name|Type  |Required|Description                       |Options|
@@ -277,7 +278,7 @@ In the body of your request, the JSON opject should follow this format:
 }
 ```
 
-### update a property
+### delete a property
 ```json
 {
     "user_email": "john@johndoe.com",
@@ -286,6 +287,28 @@ In the body of your request, the JSON opject should follow this format:
         {
             "action": "delete",
             "property_id": "1234567"
+        }
+    ]
+}
+```
+
+### delete several properties
+```json
+{
+    "user_email": "john@johndoe.com",
+    "api_key": "***********",
+    "data": [
+        {
+            "action": "delete",
+            "property_id": "1234567"
+        },
+		{
+            "action": "delete",
+            "property_id": "87654321"
+        },
+		{
+            "action": "delete",
+            "property_id": "56784321"
         }
     ]
 }
