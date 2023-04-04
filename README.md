@@ -73,7 +73,7 @@ In the body of your request, the JSON opject should follow this format:
 |owner_user          |string |No                                       |The email address of existing user who will be primary owner of property.                   |                                                                                                                                                                               |
 |editing_users          |string |No                                       |The email address(es) of existing users who are allowed to edit the property. Separated with a vertical pipe &#124;                  |                                                                                                                                                                               |
 |messaging_users        |string |No                                       |The email address(es) of existing users who will receive emails of messages to the property. Separated with a vertical pipe &#124;   |                                                                                                                                                                               |
-|popable_mantch_users   |string |No                                       |The email address(es) of existing users who will receive Popable Match emails for the property. Separated with a vertical pipe &#124;|                                                                                                                                                                               |
+|popable_match_users   |string |No                                       |The email address(es) of existing users who will receive Popable Match emails for the property. Separated with a vertical pipe &#124;|                                                                                                                                                                               |
 
 ### available_spaces
 
@@ -195,7 +195,7 @@ In the body of your request, the JSON opject should follow this format:
             "owner_user": "john@johndoe.com",
             "editing_users": "jane@johndoe.com",
             "messaging_users": "jane@johndoe.com|jack@johndoe.com",
-            "popable_mantch_users": "jack@johndoe"
+            "popable_match_users": "jack@johndoe"
         }
     ]
 }
@@ -291,7 +291,7 @@ In the body of your request, the JSON opject should follow this format:
             "owner_user": "john@johndoe.com",
             "editing_users": "jane@johndoe.com",
             "messaging_users": "jane@johndoe.com|jack@johndoe.com",
-            "popable_mantch_users": "jack@johndoe"
+            "popable_match_users": "jack@johndoe"
         }
     ]
 }
