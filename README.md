@@ -70,6 +70,7 @@ In the body of your request, the JSON opject should follow this format:
 |population             |float  |No                                       |The population near the property                                                                                            |                                                                                                                                                                               |
 |average_hh_income      |float  |No                                       |The average household income near the property                                                                              |                                                                                                                                                                               |
 |key_tenants_tenant     |string |No                                       |The key tenants for the property. Separated with a vertical pipe &#124;                                                          |                                                                                                                                                                               |
+|owner_user          |string |No                                       |The email address of existing user who will be primary owner of property.                   |                                                                                                                                                                               |
 |editing_users          |string |No                                       |The email address of existing users who are allowed to edit the property. Separated with a vertical pipe &#124;                  |                                                                                                                                                                               |
 |messaging_users        |string |No                                       |The email address of existing users who will receive emails of messages to the property. Separated with a vertical pipe &#124;   |                                                                                                                                                                               |
 |popable_mantch_users   |string |No                                       |The email address of existing users who will receive Popable Match emails for the property. Separated with a vertical pipe &#124;|                                                                                                                                                                               |
@@ -191,6 +192,7 @@ In the body of your request, the JSON opject should follow this format:
             "population": 1.2,
             "average_hh_income": 120000,
             "key_tenants_tenant": "Apple|Starbucks|Chick-Fil-A",
+            "owner_user": "john@johndoe.com",
             "editing_users": "jane@johndoe.com",
             "messaging_users": "jane@johndoe.com|jack@johndoe.com",
             "popable_mantch_users": "jack@johndoe"
@@ -286,6 +288,7 @@ In the body of your request, the JSON opject should follow this format:
             "population": 1.2,
             "average_hh_income": 120000,
             "key_tenants_tenant": "Apple|Starbucks|Chick-Fil-A",
+            "owner_user": "john@johndoe.com",
             "editing_users": "jane@johndoe.com",
             "messaging_users": "jane@johndoe.com|jack@johndoe.com",
             "popable_mantch_users": "jack@johndoe"
