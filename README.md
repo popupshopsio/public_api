@@ -41,7 +41,7 @@ In the body of your request, the JSON opject should follow this format:
 
 
 ### data
-**note:** while several properties can be managed on a single call, we recommend a single property per call.
+**note:** while several properties can be managed on a single call, we request a single property per call. Timeout for the call is 60 seconds. Exceeding this will produce a 524 connection error.
 
 |Parameter Name         |Type   |Required                                 |Description                                                                                                                 |Options                                                                                                                                                                        |
 |-----------------------|-------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
